@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banco Nacion</title>
     <style>
-        /* Elimina márgenes y desactiva el scroll */
+        /* Reiniciar márgenes y padding, y evitar scroll */
         * {
             margin: 0;
             padding: 0;
         }
 
-        /* Asegura que html y body ocupen toda la pantalla */
+        /* Configuración de html y body para ocupar toda la pantalla */
         html, body {
             width: 100%;
             height: 100%;
@@ -21,11 +21,14 @@
             justify-content: center;
         }
 
-        /* Configura la imagen para cubrir toda la pantalla sin desbordarse */
+        /* Configuración de la imagen para que se adapte bien en móviles */
         img {
-            min-width: 100%;
-            min-height: 100%;
-            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Mantiene la proporción sin distorsión */
         }
     </style>
 </head>
